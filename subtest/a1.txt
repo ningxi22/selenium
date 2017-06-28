@@ -1,0 +1,2 @@
+committing to repo before undoing
+adding to staging area

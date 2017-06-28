@@ -1,0 +1,66 @@
+Question 1
+
+mkdir test
+git init
+vi a.txt
+i
+Git is good
+esc
+ZZ
+git add a.txt
+git status
+git commit -m 'committing a.txt'
+git status
+
+Question 2
+
+mkdir subtest
+cd subtest
+vi b.txt
+i
+adding a comment
+esc
+ZZ
+vi a1.txt
+i
+adding a1.txt
+esc
+ZZ
+git add b.txt
+git add a1.txt
+git status
+git commit a1.txt
+git commit b.txt
+git log
+
+Question 3
+
+cd ..
+vi a.txt
+i
+Github is awesome
+esc
+ZZ
+git add a.txt
+diff --staged
+git commit a.txt
+git push origin master
+
+Question 4
+
+cd subtest
+vi a1.txt
+i
+editing a1.txt for staging
+esc
+ZZ
+git add a1.txt
+git reset HEAD~1
+vi a1.txt
+i
+editing again for repo
+esc
+ZZ
+git add a1.txt
+git commit -m 'adding a comment'
+git reset HEAD~1
