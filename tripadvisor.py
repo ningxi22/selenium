@@ -63,23 +63,8 @@ while True:
 		break
 
 
-	# Better solution using Explicit Waits in selenium: http://selenium-python.readthedocs.io/waits.html?highlight=element_to_be_selected#explicit-waits
+	# Element <a data-page-number="2" data-offset="30" href="/Restaurants-g60763-oa30-zfn29504-New_York_City_New_York.html#EATERY_LIST_CONTENTS" class="nav next rndBtn ui_button primary taLnk" onclick="      ta.restaurant_filter.paginate(this.getAttribute('data-offset'));; ta.trackEventOnPage('STANDARD_PAGINATION', 'next', '2', 0); return false;
+  #">...</a> is not clickable at point (977, 698). Other element would receive the click: <div id="" class=" hotels_lf_redesign ui_container is-mobile responsive_body">...</div>
+  #(Session info: chrome=59.0.3071.115)
+  #(Driver info: chromedriver=2.31.488774 (7e15618d1bf16df8bf0ecf2914ed1964a387ba0b),platform=Mac OS X 10.12.5 x86_64)
 
-	# try:
-	# 	wait_review = WebDriverWait(driver, 10)
-	# 	reviews = wait_review.until(EC.presence_of_all_elements_located((By.XPATH,
-	# 								'//ol[@class="bv-content-list bv-content-list-Reviews bv-focusable"]/li')))
-	# 	print(index)
-	# 	print('review ok')
-	# 	# reviews = driver.find_elements_by_xpath('//ol[@class="bv-content-list bv-content-list-Reviews bv-focusable"]/li')
-	#
-	# 	wait_button = WebDriverWait(driver, 10)
-	# 	button = wait_button.until(EC.element_to_be_clickable((By.XPATH,
-	# 								'//div[@class="bv-content-list-container"]//span[@class="bv-content-btn-pages-next"]')))
-	# 	print('button ok')
-	# 	# button = driver.find_element_by_xpath('//span[@class="bv-content-btn-pages-next"]')
-	# 	button.click()
-	# except Exception as e:
-	# 	print(e)
-	# 	driver.close()
-	# 	break
